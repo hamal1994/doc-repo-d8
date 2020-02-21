@@ -60,3 +60,16 @@ Thumbs.db
 # Things in the core directory that Drupal 8 commits in the repository.
 !core/**/*.gz
 
+vendor/composer/installed.json
+vendor/composer/include_paths.php
+vendor/composer/autoload_static.php
+vendor/composer/autoload_real.php
+vendor/composer/autoload_files.php
+sites/default/settings.php
+sites/default/default.service.yml
+.ddev/commands/db/mysql
+.ddev/config.yaml
+composer.lock
+sites/default/.gitignore
+sites/all/drush/.gitignore
+.ddev/.gitignore
