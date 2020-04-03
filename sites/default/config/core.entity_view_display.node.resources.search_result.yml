@@ -1,0 +1,46 @@
+uuid: 740c7c97-1158-4cfa-942b-308b5b90c91b
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.resources.field_image
+    - field.field.node.resources.field_title_file
+    - field.field.node.resources.field_topic
+    - node.type.resources
+  module:
+    - file
+    - image
+    - user
+id: node.resources.search_result
+targetEntityType: node
+bundle: resources
+mode: search_result
+content:
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title_file:
+    weight: 0
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_topic:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  links: true
